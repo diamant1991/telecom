@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Контакты</title>
+  <title>Кабинет формы</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet">
@@ -61,74 +61,107 @@
       <div class="container">
         <div class="row">
           <div class="content-wrapp clearfix">
-            <div class="contacts small-container">
+            <div class="small-container">
               <ul class="breadcrumb clearfix">
                 <li>
                   <a href="#" class="middle">Магазин</a>
                   <span class="middle breadcrumb-arrow">→</span>
                 </li>
                 <li>
-                  <span class="middle">Контакты</span>
+                  <span class="middle">Мой кабинет</span>
                 </li>
               </ul>
-              <h2>Контактная информация</h2>
-              <div class="contacts__content">
-                <div class="map">
-                  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=pSzz7QagzxdwqaoJ3NYiSZJ6vOHh8vBF&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
-                </div>
-                <div class="contacts__text">
-                  <h4>Наш адрес:</h4>
-                  <p>
-                    127322, г. Москва, ул. Яблочкова, д.21, корп. 3, оф. 1Б. <br>
-                    м. Тимирязевская (100 метров от метро), Бизнес центр «Я 21». <br>
-                    Первый вагон из центра, по переходу направо до конца, выход из перехода – налево.
-                  </p>
-                  <h4>Телефон:</h4>
-                  <p>+7 (495) 785-04-95</p>
-                  <h4>E-mail:</h4>
-                  <p>
-                    <a href="mailto:info@telecomsb.ru">info@telecomsb.ru</a> <br>
-                    <a href="mailto:7850495@mail.ru">7850495@mail.ru</a>
-                  </p>
-                  <p>
-                    <b>Skype:</b> telecomsb <br>
-                    <b>ICQ:</b> 607471454
-                  </p>
-                  <p>
-                    <b>График работы:</b> понедельник - пятница с 9:00 до 18:00
-                  </p>
-                  <h4>Социальные сеты:</h4>
-                  <div class="contacts__social">
-                    <a href="#" class="facebook-btn middle"></a>
-                    <a href="#" class="vk-btn middle"></a>
-                  </div>
-                  <h4>Реквизиты:</h4>
-                  <div class="req">
-                    <div>
-                      <b>Полное наименование организации:</b> ООО «ТЕЛЕКОМ СБ»
-                    </div>
-                    <div>
-                      <b>Юридический адрес:</b> 127322, г. Москва, ул. Яблочкова, д. 21, корп. 3, этаж 4, помещение IX – комната 1Б
-                    </div>
-                    <div>
-                      <b>Фактический адрес:</b> 127322, г. Москва, ул. Яблочкова, д. 21, корп. 3, этаж 4, помещение IX – комната 1Б
-                    </div>
-                    <div>
-                      <b>Код ОГРН:</b> 1107746627460
-                    </div>
-                    <div>
-                      <b>Идентификационный номер (ИНН):</b> 7718815732
-                    </div>
-                    <div>
-                      <b>КПП:</b> 771501001
-                    </div>
-                  </div>
-                  <h4>Координаты:</h4>
-                  <p>
-                    <b>Долгота:</b> 37°34′35.3″E (37.57647935) <br>
-                    <b>Широта:</b> 37°34′35.3″E (37.57647935)
-                  </p>
-                </div>
+              <h2>Редактировать профиль</h2>
+              <div class="cabinet-profile">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        Имя
+                      </td>
+                      <td>
+                        <input type="text" value="Вася" class="profile-input">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Фамилия
+                      </td>
+                      <td>
+                        <input type="text" class="profile-input">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Отчество
+                      </td>
+                      <td>
+                        <input type="text" class="profile-input">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        E-mail <span>*</span>
+                      </td>
+                      <td>
+                        <input type="text" class="profile-input">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Логин (мин. 3 символа) <span>*</span>
+                      </td>
+                      <td>
+                        <input type="text" class="profile-input">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Новый пароль (мин 4 символа)
+                      </td>
+                      <td>
+                        <input type="password" class="profile-input">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Новый пароль (еще раз)
+                      </td>
+                      <td>
+                        <input type="password" class="profile-input">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        привязать профиль из соц. сети
+                      </td>
+                      <td>
+                        <div class="social-profile">
+                          <a href="#" class="social-item middle">
+                            <i class="fa fa-vk" aria-hidden="true"></i>
+                          </a>
+                          <a href="#" class="social-item middle">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                          <a href="#" class="social-item middle">
+                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                          </a>
+                          <a href="#" class="social-item middle">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                      </td>
+                      <td>
+                        <a href="#" class="middle save-btn">Сохранить</a>
+                        <a href="#" class="middle reset-btn">Сбросить</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
