@@ -61,7 +61,7 @@
       <div class="container">
         <div class="row">
           <div class="content-wrapp clearfix">
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-3 col-sm-4">
               <div class="row item-block">
                 <aside class="sidebar">
                   <div class="sidebar-item">
@@ -113,7 +113,7 @@
                 </aside>
               </div>
             </div>
-            <div class="col-lg-10">
+            <div class="col-lg-10 col-md-9 col-sm-8">
               <div class="row item-block">
                 <ul class="breadcrumb clearfix">
                   <li>
@@ -129,17 +129,18 @@
                   </li>
                 </ul>
                 <h3 class="item-title font-medium">Вызывные панели URMET</h3>
+
                 <div class="sorting clearfix">
                   <div class="pull-left">
                     <span class="middle">Сортировать</span>
-                    <a href="#" class="sorting-item active middle">п
-                      <span class="middle">о популярности</span>
+                    <a href="#" class="sorting-item active middle">
+                      <span class="middle">По популярности</span>
                       <span class="middle icon-sort"></span>
                     </a>
                     <a href="#" class="sorting-item middle">по цене</a>
                     <a href="#" class="sorting-item middle">по названию</a>
                   </div>
-                  <div class="pull-right">
+                  <div class="pull-right hidden-xs">
                     <div class="view">
                       <a href="#" class="view-btn view-column active middle" onclick="opcl(mydivs,'#column'); return false;"></a>
                       <a href="#" class="view-btn view-list middle" onclick="opcl(mydivs,'#list'); return false;"></a>
@@ -147,10 +148,54 @@
                   </div>
                 </div>
                 <div class="catalog clearfix">
-                  <div class="col-lg-9">
+                  <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 pull-right">
+                    <div class="row catalog-block">
+                      <button type="button" class="cat-btn visible-xs clearfix">
+                        <span class="pull-left">Фильтр</span>
+                        <span class="pull-right">
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </span>
+                      </button>
+                      <div class="filter sidebar">
+                        <div class="filter-item">
+                          <div class="filter-title">Обьектив</div>
+                          <ul class="checkbox-list">
+                            <li>
+                              <input type="checkbox" class="checkbox" id="check1" name="var1">
+                              <label for="check1">вариофокальный</label>
+                            </li>
+                            <li>
+                              <input type="checkbox" class="checkbox" id="check2" name="var1">
+                              <label for="check2">фиксированный</label>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="filter-item">
+                          <div class="filter-title">Ик подсветка</div>
+                          <ul class="checkbox-list">
+                            <li>
+                              <input type="checkbox" class="checkbox" id="check3" name="var2">
+                              <label for="check3">Есть</label>
+                            </li>
+                            <li>
+                              <input type="checkbox" class="checkbox" id="check4" name="var2">
+                              <label for="check4">нет</label>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="filter-item">
+                          <a href="#" class="filter-compare">Применить</a>
+                          <a href="#" class="filter-reset">Сбросить</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 pull-left">
                     <div class="row catalog-block">
                       <div id="column" class="product-wrapp clearfix">
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-xs-6">
                           <div class="row product-block">
                             <div class="product-item">
                               <div class="product-visible">
@@ -197,7 +242,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-xs-6">
                           <div class="row product-block">
                             <div class="product-item">
                               <div class="product-visible">
@@ -240,7 +285,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-xs-6">
                           <div class="row product-block">
                             <div class="product-item">
                               <div class="product-visible">
@@ -287,7 +332,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-xs-6">
                           <div class="row product-block">
                             <div class="product-item">
                               <div class="product-visible">
@@ -334,7 +379,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-xs-6">
                           <div class="row product-block">
                             <div class="product-item">
                               <div class="product-visible">
@@ -381,7 +426,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-xs-6">
                           <div class="row product-block">
                             <div class="product-item">
                               <div class="product-visible">
@@ -428,7 +473,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-xs-6">
                           <div class="row product-block">
                             <div class="product-item">
                               <div class="product-visible">
@@ -475,7 +520,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-xs-6">
                           <div class="row product-block">
                             <div class="product-item">
                               <div class="product-visible">
@@ -522,7 +567,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-xs-6">
                           <div class="row product-block">
                             <div class="product-item">
                               <div class="product-visible">
@@ -805,43 +850,7 @@
                         </a>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-lg-3">
-                    <div class="row catalog-block">
-                      <div class="filter">
-                        <div class="filter-item">
-                          <div class="filter-title">Обьектив</div>
-                          <ul class="checkbox-list">
-                            <li>
-                              <input type="checkbox" class="checkbox" id="check1" name="var1">
-                              <label for="check1">вариофокальный</label>
-                            </li>
-                            <li>
-                              <input type="checkbox" class="checkbox" id="check2" name="var1">
-                              <label for="check2">фиксированный</label>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="filter-item">
-                          <div class="filter-title">Ик подсветка</div>
-                          <ul class="checkbox-list">
-                            <li>
-                              <input type="checkbox" class="checkbox" id="check3" name="var2">
-                              <label for="check3">Есть</label>
-                            </li>
-                            <li>
-                              <input type="checkbox" class="checkbox" id="check4" name="var2">
-                              <label for="check4">нет</label>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="filter-item">
-                          <a href="#" class="filter-compare">Применить</a>
-                          <a href="#" class="filter-reset">Сбросить</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  </div>  
                 </div>
                 <!-- catalog -->
               </div>

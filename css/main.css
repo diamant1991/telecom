@@ -1229,10 +1229,6 @@ h5 {
 
 .content-wrapp {
   margin-left: -20px; }
-  .content-wrapp > .col-lg-2 {
-    width: 20%; }
-  .content-wrapp > .col-lg-10 {
-    width: 80%; }
 
 .item-block {
   padding-left: 20px; }
@@ -1252,13 +1248,14 @@ img {
 
 .product {
   clear: both;
-  margin-bottom: 40px; }
+  margin-bottom: 20px; }
 
 .product-wrapp {
   margin-left: -20px; }
 
 .product-block {
-  padding-left: 20px; }
+  padding-left: 20px;
+  padding-bottom: 20px; }
 
 .product-visible {
   padding: 20px; }
@@ -1270,17 +1267,6 @@ img {
   .product-item .fa-rub {
     font-size: 16px;
     font-weight: 300; }
-  .product-item:hover, .product-item.active {
-    border-color: transparent; }
-    .product-item:hover .product-visible, .product-item.active .product-visible {
-      -webkit-box-shadow: 0px 5px 20px 0px rgba(31, 71, 82, 0.25);
-      box-shadow: 0px 5px 20px 0px rgba(31, 71, 82, 0.25); }
-      .product-item:hover .product-visible .product-price, .product-item.active .product-visible .product-price {
-        display: none; }
-    .product-item:hover .product-hidden, .product-item.active .product-hidden {
-      display: block;
-      -webkit-box-shadow: 0px 5px 20px 0px rgba(31, 71, 82, 0.25);
-      box-shadow: 0px 5px 20px 0px rgba(31, 71, 82, 0.25); }
 
 .add-basket {
   position: absolute;
@@ -2405,3 +2391,31 @@ img {
     font-size: 11px;
     text-transform: uppercase;
     margin-bottom: 20px; }
+
+.cat-btn {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 0;
+  padding: 0 10px;
+  cursor: pointer;
+  background: #40aebb;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+  outline: 0; }
+  .cat-btn .pull-right {
+    padding-top: 1px; }
+
+.no-mrg {
+  margin-left: 0; }
+
+.icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #fff; }
+  .icon-bar + .icon-bar {
+    margin-top: 5px; }
