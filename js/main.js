@@ -109,3 +109,30 @@ $(document).ready(function(){
 		});
 	}
 });
+
+$(document).ready(function() {
+	if (window.matchMedia("(min-width: 768px)").matches){
+		var servPos, winPosMain, sidebarWidth;
+	  function refreshServ() {
+	    servPos = $('.sidebar').offset().top;
+	    sidebarWidth = $('.sidebar').width()
+	  }
+
+	  refreshServ();
+	  $(window).resize(refreshServ);
+	    
+	  $(window).scroll(function() {
+	    winPosMain = $(window).scrollTop();
+	    
+	    if (winPosMain >= servPos) {
+	      $('.sidebar').addClass('fixed')
+	      $('.sidebar').css('width', sidebarWidth + 'px');
+	    }  
+	    else {
+	    	$('.sidebar').removeClass('fixed')
+	    	$('.sidebar').css('width', '100%');
+	    }
+	  });
+	}
+});
+  

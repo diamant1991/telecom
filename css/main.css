@@ -1150,6 +1150,12 @@ h5 {
 .sidebar {
   border: 1px solid #e6e6e6;
   position: relative; }
+  .sidebar.fixed {
+    position: fixed;
+    z-index: 100;
+    top: 10px;
+    background: #fff;
+    width: 20%; }
   .sidebar-item {
     padding: 20px 0;
     padding-bottom: 10px;
@@ -2974,7 +2980,7 @@ img {
 
 .modal-nav {
   position: fixed;
-  z-index: 1000;
+  z-index: 10000;
   left: 0;
   top: 0;
   display: none;
@@ -3069,3 +3075,116 @@ img {
 
 .open-menu {
   overflow: hidden; }
+
+.catalog-product-text {
+  font-size: 11px;
+  position: relative;
+  color: #676975;
+  padding-right: 160px;
+  min-height: 130px;
+  line-height: 1.3; }
+  .catalog-product-text p {
+    margin-bottom: 15px; }
+
+.catalog-product-img {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 0;
+  width: 150px; }
+
+.section-item {
+  border: 1px solid #e5e5e5;
+  padding-bottom: 15px; }
+
+.section-img {
+  height: 150px;
+  padding: 5px;
+  text-align: center; }
+
+.section {
+  margin-left: -20px; }
+
+.section-block {
+  padding-left: 20px;
+  padding-bottom: 20px; }
+
+.section-name {
+  padding: 15px;
+  padding-top: 0;
+  height: 55px;
+  overflow: hidden;
+  font-size: 14px; }
+  .section-name a {
+    color: #000; }
+    .section-name a:hover {
+      color: #40aebb; }
+
+.bottom-arrow {
+  text-align: center;
+  margin-bottom: 20px; }
+
+.basket {
+  margin-bottom: 30px; }
+  .basket-name {
+    font-size: 18px; }
+  .basket table {
+    width: 100%; }
+  .basket td {
+    vertical-align: middle;
+    border: 1px solid #e5e5e5;
+    padding: 20px;
+    border-left: 0;
+    border-right: 0; }
+    .basket td:first-child {
+      text-align: center;
+      border-left: 1px solid #e5e5e5;
+      border-right: 1px solid #e5e5e5;
+      width: 15%; }
+    .basket td:nth-child(2) {
+      width: 30%; }
+    .basket td:nth-child(3) {
+      width: 26%; }
+    .basket td:nth-child(4) {
+      width: 20%; }
+    .basket td:last-child {
+      border-right: 1px solid #e5e5e5; }
+
+.basket-icon {
+  border: 1px solid #e5e5e5;
+  width: 40px;
+  height: 40px;
+  display: block;
+  background: #fff url(../img/basket-icon.png) no-repeat 50%; }
+
+.product-price_black {
+  color: #000; }
+
+.basket-total {
+  text-align: right; }
+  .basket-total .red-btn {
+    margin-left: 10px; }
+
+.basket-total__item {
+  text-align: left;
+  margin: 0 15px; }
+
+.basket-total__title {
+  text-transform: uppercase;
+  font-size: 11px;
+  color: #4a4a4a;
+  margin-bottom: 5px; }
+
+.basket-total__price {
+  font-size: 24px;
+  color: #3a3c49; }
+
+.basket-total__price_black {
+  color: #000; }
+
+.red-btn {
+  text-transform: uppercase;
+  color: #fff;
+  padding: 10px;
+  background: #bf4242;
+  font-size: 14px; }
